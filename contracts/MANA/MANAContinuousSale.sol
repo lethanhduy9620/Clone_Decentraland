@@ -67,4 +67,5 @@ contract MANAContinuousSale is ContinuousSale, Ownable {
     function pauseToken() public onlyOwner {
         MANAToken(token).pause();
     }
+
 }

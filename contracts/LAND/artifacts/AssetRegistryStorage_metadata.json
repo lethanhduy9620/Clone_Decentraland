@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.12+commit.f00d7308"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/LAND/AssetRegistryStorage.sol": "AssetRegistryStorage"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/LAND/AssetRegistryStorage.sol": {
+			"keccak256": "0x89799c80a884d65602df7cd0159394b35c97d6392fea71ad87eb6ab047df5393",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://dca385ee315e604bb1229cad4072e3eb6f86a4e930d7a0cdcbd052218357a2dc",
+				"dweb:/ipfs/QmVzH3EfGwWJoM2JUeUpYMcVG3VXzDjGQGf8Qt7uNdpam4"
+			]
+		}
+	},
+	"version": 1
+}

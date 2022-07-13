@@ -1,0 +1,145 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					}
+				],
+				"name": "tokenByIndex",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					}
+				],
+				"name": "tokenOfOwnerByIndex",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalSupply",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"tokenByIndex(uint256)": {
+					"details": "Throws if `_index` >= `totalSupply()`.",
+					"params": {
+						"_index": "A counter less than `totalSupply()`"
+					},
+					"returns": {
+						"_0": "The token identifier for the `_index`th NFT,  (sort order not specified)"
+					}
+				},
+				"tokenOfOwnerByIndex(address,uint256)": {
+					"details": "Throws if `_index` >= `balanceOf(_owner)` or if  `_owner` is the zero address, representing invalid NFTs.",
+					"params": {
+						"_index": "A counter less than `balanceOf(_owner)`",
+						"_owner": "An address where we are interested in NFTs owned by them"
+					},
+					"returns": {
+						"_0": "The token identifier for the `_index`th NFT assigned to `_owner`,   (sort order not specified)"
+					}
+				},
+				"totalSupply()": {
+					"returns": {
+						"_0": "A count of valid NFTs tracked by this contract, where each one of  them has an assigned and queryable owner not equal to the zero address"
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"tokenByIndex(uint256)": {
+					"notice": "Enumerate valid NFTs"
+				},
+				"tokenOfOwnerByIndex(address,uint256)": {
+					"notice": "Enumerate NFTs assigned to an owner"
+				},
+				"totalSupply()": {
+					"notice": "Count NFTs tracked by this contract"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/LAND/IERC721Enumerable.sol": "IERC721Enumerable"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/LAND/AssetRegistryStorage.sol": {
+			"keccak256": "0x42c34c0e7eb9e11beedd6431162a24306fad365ff2889b05db0e87bb2e392280",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://cc2f852af5c87eb419045451630f8191959e66cdb00c2ea235326b15ca36b9c9",
+				"dweb:/ipfs/QmbJJhYXVUxFsJUF55RoR6L7M4375bHBXRZdyJYNE73isV"
+			]
+		},
+		"contracts/LAND/IERC721Enumerable.sol": {
+			"keccak256": "0x5200eac13747d54c01584a26f65fc2d656ecba9ed2403a7a6079308e86f55db4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a4819e1992f2c6863e529a20c58fa666a36ec840c7d88fa498547600f8422d50",
+				"dweb:/ipfs/QmUtdnDdmWzKQDyZMicmDsxE1DtVpBeHGQCuqXEKreAu2V"
+			]
+		}
+	},
+	"version": 1
+}

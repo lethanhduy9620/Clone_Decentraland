@@ -1,0 +1,97 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					}
+				],
+				"name": "tokenOf",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "index",
+						"type": "uint256"
+					}
+				],
+				"name": "tokenOfOwnerByIndex",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "assetId",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/LAND/IERC721Enumerable.sol": "ERC721Enumerable"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/LAND/AssetRegistryStorage.sol": {
+			"keccak256": "0x42c34c0e7eb9e11beedd6431162a24306fad365ff2889b05db0e87bb2e392280",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://cc2f852af5c87eb419045451630f8191959e66cdb00c2ea235326b15ca36b9c9",
+				"dweb:/ipfs/QmbJJhYXVUxFsJUF55RoR6L7M4375bHBXRZdyJYNE73isV"
+			]
+		},
+		"contracts/LAND/IERC721Enumerable.sol": {
+			"keccak256": "0x9f81c28f573b465c2ca09129661df1e2fbb99601fe4a180a9970d5ed3adf603a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://44c38f7016a959dba403104bfd96202c1b086522b061f7762162b8a34d31f644",
+				"dweb:/ipfs/QmXv7LC14t28aqhrLtMKSjvcBr4CEPdmL8wbQmpB7tXoQS"
+			]
+		}
+	},
+	"version": 1
+}

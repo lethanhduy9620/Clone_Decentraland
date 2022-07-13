@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.12+commit.f00d7308"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/LAND/OwnableStorage.sol": "OwnableStorage"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/LAND/OwnableStorage.sol": {
+			"keccak256": "0xbc59a97ff5e4bf527b62b783b80bdb091caa19440e383bec3841ba54201f124f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d482770083b970657a4f9d3c064a0d80ad1ad77bbb669cab7a7c9aabd32cbe3f",
+				"dweb:/ipfs/QmbZiHiogJiYKo4hGFVpq7nY5VtxRtPPeMV5kf6DxtocBz"
+			]
+		}
+	},
+	"version": 1
+}

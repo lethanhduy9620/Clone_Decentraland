@@ -1,0 +1,155 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "authorizedDeploy",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "currentContract",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "latestPing",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "proxyOwner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/LAND/Storage.sol": "Storage"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/LAND/AssetRegistryStorage.sol": {
+			"keccak256": "0x42c34c0e7eb9e11beedd6431162a24306fad365ff2889b05db0e87bb2e392280",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://cc2f852af5c87eb419045451630f8191959e66cdb00c2ea235326b15ca36b9c9",
+				"dweb:/ipfs/QmbJJhYXVUxFsJUF55RoR6L7M4375bHBXRZdyJYNE73isV"
+			]
+		},
+		"contracts/LAND/LANDStorage.sol": {
+			"keccak256": "0x99d2f3a9ccb15560cee916e0cfe349934c5252e6cd4d304db12c918980a5d0eb",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://12fd2e7f9938ff9c50365f554d880402742bb006569d5d2df36bc5f04d87ffb8",
+				"dweb:/ipfs/QmYxuLWEV53LYVQuJdqMSk4Nc48tsT8ZtNEBgT17gggdCD"
+			]
+		},
+		"contracts/LAND/OwnableStorage.sol": {
+			"keccak256": "0xbc59a97ff5e4bf527b62b783b80bdb091caa19440e383bec3841ba54201f124f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d482770083b970657a4f9d3c064a0d80ad1ad77bbb669cab7a7c9aabd32cbe3f",
+				"dweb:/ipfs/QmbZiHiogJiYKo4hGFVpq7nY5VtxRtPPeMV5kf6DxtocBz"
+			]
+		},
+		"contracts/LAND/ProxyStorage.sol": {
+			"keccak256": "0x4406ba775a0207417d9b52d50662ca5d4d33e74f3efb7117948a7a717cf7c988",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://139922e15a0629a032318585552bbc5f8dacd02af8a4eb08b02fc3ef2230ccb9",
+				"dweb:/ipfs/QmNsgupKgRYLs4tAEjwjpPuAhaidZK3XWxYBbCY2isN4jU"
+			]
+		},
+		"contracts/LAND/Storage.sol": {
+			"keccak256": "0xd4ea6407e7e2de2c870c4e754458ce9d946f9ae6f1b382102a00869f79c88625",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b284107a8261f8cdead759fa9e8595e9b0c81b63ee7cf7ead5c0b1fe3bb29913",
+				"dweb:/ipfs/Qmehhtot53ma7NjH5AsortjGxWRaMsQPzcE2wJrUrdS5Ve"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,131 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "description",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "symbol",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "assetId",
+						"type": "uint256"
+					}
+				],
+				"name": "tokenMetadata",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "tokenURI",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/LAND/ERC721MetadataLAND.sol": "ERC721MetadataLAND"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/LAND/AssetRegistryStorage.sol": {
+			"keccak256": "0x42c34c0e7eb9e11beedd6431162a24306fad365ff2889b05db0e87bb2e392280",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://cc2f852af5c87eb419045451630f8191959e66cdb00c2ea235326b15ca36b9c9",
+				"dweb:/ipfs/QmbJJhYXVUxFsJUF55RoR6L7M4375bHBXRZdyJYNE73isV"
+			]
+		},
+		"contracts/LAND/ERC721MetadataLAND.sol": {
+			"keccak256": "0x0f7c28309f69e3d00323acee44d0dced9e55a3999670fbe6621132bd4f7d3193",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://040c0267eae79025921e19cf4e9691a45caff97eb1378c2d7c99cf5b7d7f3313",
+				"dweb:/ipfs/Qmbz8y5BaFH3G2fHyNbbzoRpYYT6n6yRmDz2Q6LazBFCSU"
+			]
+		}
+	},
+	"version": 1
+}

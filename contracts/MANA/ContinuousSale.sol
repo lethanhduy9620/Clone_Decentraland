@@ -1,8 +1,9 @@
-
 // SPDX-License-Identifier: MIT
 pragma solidity  >=0.8.0;
+
 import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 import "./MANAToken.sol";
+
 /**
  * @title ContinuousSale
  * @dev ContinuousSale implements a contract for managing a continuous token sale
@@ -96,7 +97,7 @@ contract ContinuousSale  {
 
     function forwardFunds() internal {
         // wallet for collected fund
-        wallet.transfer(msg.value); //transfer bằng cách này tìm ẩn rủi ro về bảo mật, do đó research thêm để tìm cách hay hơn về vấn đề này
+        wallet.transfer(msg.value); 
     }
 
     fallback() external payable {
@@ -106,4 +107,5 @@ contract ContinuousSale  {
     receive() external payable {
         buyTokens(msg.sender);
     }
+
 }

@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.12+commit.f00d7308"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "currentContract",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "proxyOwner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/LAND/ProxyStorage.sol": "ProxyStorage"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/LAND/ProxyStorage.sol": {
+			"keccak256": "0x4406ba775a0207417d9b52d50662ca5d4d33e74f3efb7117948a7a717cf7c988",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://139922e15a0629a032318585552bbc5f8dacd02af8a4eb08b02fc3ef2230ccb9",
+				"dweb:/ipfs/QmNsgupKgRYLs4tAEjwjpPuAhaidZK3XWxYBbCY2isN4jU"
+			]
+		}
+	},
+	"version": 1
+}
