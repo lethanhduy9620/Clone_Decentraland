@@ -23,7 +23,7 @@ abstract contract CappedCrowdSale is CrowdSale {
 
   // overriding Crowdsale#validPurchase to add extra cap logic
   // @return true if investors can buy at the moment
-  function validPurchaseWithinCap() internal returns (bool) {
+  function _validPurchaseWithinCap() internal returns (bool) {
     bool withinCap = weiRaised.add(msg.value) <= cap;
     return withinCap;
   }

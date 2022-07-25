@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.0+commit.c7dfd78e"
+		"version": "0.8.7+commit.e28d00a7"
 	},
 	"language": "Solidity",
 	"output": {
@@ -19,6 +19,19 @@
 						"internalType": "bool",
 						"name": "",
 						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "estateRegistry",
+				"outputs": [
+					{
+						"internalType": "contract IEstateRegistry",
+						"name": "",
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -59,7 +72,7 @@
 		"compilationTarget": {
 			"contracts/LAND/LANDStorage.sol": "LANDStorage"
 		},
-		"evmVersion": "istanbul",
+		"evmVersion": "london",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -72,11 +85,11 @@
 	},
 	"sources": {
 		"contracts/LAND/LANDStorage.sol": {
-			"keccak256": "0x99d2f3a9ccb15560cee916e0cfe349934c5252e6cd4d304db12c918980a5d0eb",
+			"keccak256": "0xcd9be7e839485410a092ee83056bd65ba459ba825ee5e37cea85ee62d8a5dcea",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://12fd2e7f9938ff9c50365f554d880402742bb006569d5d2df36bc5f04d87ffb8",
-				"dweb:/ipfs/QmYxuLWEV53LYVQuJdqMSk4Nc48tsT8ZtNEBgT17gggdCD"
+				"bzz-raw://f38ba358b92b558ace42de1af36b73d7bbc7dbbefd3c58155e525ce40de92e62",
+				"dweb:/ipfs/QmcRM9VwTS2qjtpEA8S2AKPdKuYoPW9qPJQU6siyjf6gsG"
 			]
 		}
 	},

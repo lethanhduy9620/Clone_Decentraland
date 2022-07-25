@@ -46,23 +46,24 @@ contract MANACrowdSale is CappedCrowdSale, WhiteListedCrowdSale {
     event EndRateChange(uint256 rate);
 
     // uint256 _startTime = 1657271700;
-    // uint256 _endTime = 1657442859;
-    // uint256 _initialRate = 1000;
-    // uint256 _endRate = 500;
-    // uint256 _preferentialRate = 200;
+    // uint256 _endTime = 1659551493;
+    // uint256 _initialRate = 41667;  
+    // uint256 _endRate = 25000;
+    // uint256 _preferentialRate = 66667; 
     // address _wallet = msg.sender;
 
     constructor(
-        uint256 _startBlock,
-        uint256 _endBlock,
+        address _tokenAddress,
+        uint256 _startTime,
+        uint256 _endTime,
         uint256 _initialRate,
         uint256 _endRate,
         uint256 _preferentialRate,
         address _wallet
     )
-        CappedCrowdSale(25000 ether)
+        CappedCrowdSale(25000 ether) // 1 ether = 1000$
         WhiteListedCrowdSale()
-        CrowdSale(_startTime, _endTime, _initialRate, _wallet) //create MANAToken thông qua hợp đồng CrowdSale
+        CrowdSale(_tokenAddress,_startTime, _endTime, _initialRate, _wallet) //create MANAToken thông qua hợp đồng CrowdSale
     {
         require(_initialRate > 0, "Initial rate must be larger then 0");
         require(_endRate > 0, "End rate must be larger then 0");
@@ -70,7 +71,7 @@ contract MANACrowdSale is CappedCrowdSale, WhiteListedCrowdSale {
             _preferentialRate > 0,
             "Preferential Rate must be larger than 0"
         );
-        require(_wallet != address(0), "MANAToken address must not be 0");
+        require(_wallet != address(0), "Received fund address must not be 0");
 
         initialRate = _initialRate;
         endRate = _endRate;
@@ -84,7 +85,7 @@ contract MANACrowdSale is CappedCrowdSale, WhiteListedCrowdSale {
     function buyTokens(address beneficiary) public payable override {
         require(beneficiary != address(0), "Benificiary address must not be 0");
         require(_validPurchase(), "Crowd Sale is experied");
-        require(validPurchaseWithinCap(), "Token is sold out");
+        require(_validPurchaseWithinCap(), "Token is sold out");
         require(validPurchaseInWhiteList(), "Address is not in the whitelist");
         require(_isWithInCrowdShareAllowance(),"Allowance of crowd share exceed its limit");
        
@@ -93,15 +94,15 @@ contract MANACrowdSale is CappedCrowdSale, WhiteListedCrowdSale {
         uint256 rate = getRate();
 
         // calculate token amount to be created
-        uint256 tokens = weiAmount.mul(rate); //unit TKNBits (1 TKN = 10^18 TKNbits)
+        uint256 createdTokens = weiAmount.mul(rate); //unit TKNBits (1 token = 10^18 TKNbits)
 
         // update state
         weiRaised = updatedWeiRaised;
-        crowdSaleMintedToken.add(tokens); //uint TKNbits, 1 TKN = 1*10^18 TKNBits
+        crowdSaleMintedToken.add(createdTokens); //uint TKNbits, 1 token = 1*10^18 TKNBits
 
         //In CrowdSale contract
-        token.mint(beneficiary, tokens); 
-        emit TokenPurchase(msg.sender, beneficiary, weiAmount, tokens);
+        token.mint(beneficiary, createdTokens); 
+        emit TokenPurchase(msg.sender, beneficiary, weiAmount, createdTokens);
 
         super._forwardFunds();
     }
@@ -121,7 +122,7 @@ contract MANACrowdSale is CappedCrowdSale, WhiteListedCrowdSale {
             return preferentialRate;
         } 
 
-        // otherwise compute the price for the auction
+        // otherwise compute the price for buying tokens
         uint256 elapsed  = block.timestamp - startTime;
         uint256 rateRange = initialRate - endRate; 
         uint256 timeRange = endTime - startTime;
@@ -162,15 +163,25 @@ contract MANACrowdSale is CappedCrowdSale, WhiteListedCrowdSale {
         emit EndRateChange(rate);
     }
 
-    function allowcateShare() internal {
+    function allowcateFoundationShare() public onlyOwner {
         // emit tokens for the foundation
-        token.mint(wallet, FOUNDATION_SHARE.mul(token.totalSupply()).div(TOTAL_SHARE));
+        uint foundationTokens = FOUNDATION_SHARE.mul(token.totalSupply()).div(TOTAL_SHARE); //unit: token
+        crowdShareAllowance = CROWDSALE_SHARE.mul(token.totalSupply()).div(TOTAL_SHARE); //unit: token
 
-        // NOTE: cannot call super here because it would finish minting and the continuous sale would not be able to proceed  
+        token.transfer(wallet, foundationTokens);
     }
 
+    // @dev check whether number of minted token for crowd sale exceed allowable quantities or not
     function _isWithInCrowdShareAllowance() view internal returns(bool) {
-        return crowdSaleMintedToken =< (CROWDSALE_SHARE.mul(token.totalSupply()).div(TOTAL_SHARE)*(10**18));
+        return crowdSaleMintedToken <= (crowdShareAllowance*(10**18));
+    }
+
+    // @dev burn the rest token for crowd share after raised fund reaches to expected value
+    function burnRestTokenOfCrowdShare() public {
+        if(_isWithInCrowdShareAllowance()) {
+            uint256 burnedTokens = crowdShareAllowance.sub((crowdSaleMintedToken.div(1*10**18)));
+            token.burn(burnedTokens);
+        }
     }
 }
 

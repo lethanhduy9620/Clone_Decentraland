@@ -47,16 +47,39 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalSupply",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
 			}
 		],
 		"devdoc": {
 			"kind": "dev",
-			"methods": {},
+			"methods": {
+				"totalSupply()": {
+					"returns": {
+						"_0": "A count of valid NFTs tracked by this contract, where each one of  them has an assigned and queryable owner not equal to the zero address"
+					}
+				}
+			},
 			"version": 1
 		},
 		"userdoc": {
 			"kind": "user",
-			"methods": {},
+			"methods": {
+				"totalSupply()": {
+					"notice": "Count NFTs tracked by this contract"
+				}
+			},
 			"version": 1
 		}
 	},
@@ -85,11 +108,11 @@
 			]
 		},
 		"contracts/LAND/ERC721EnumerableLAND.sol": {
-			"keccak256": "0xf6068a136ffa0a09a0c5028e7ce70cc9d4a807585e08ed434aa81ad47e623e68",
+			"keccak256": "0xa03af13dd838a7591a7e136dda638363fd5acf7db27fcc32baff7cc2a3bf617d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://417e4b7b06c8c1b98db5f2634f4d1250c51cc6f3ca720b708848971167e766ac",
-				"dweb:/ipfs/QmZSuB21j9awTytWTR21zTnUxvXigGmW3Vvb9GwpLNdaYp"
+				"bzz-raw://683203d5aa8bfe84c6d5d885f20c64ff07cb98e63419d90bbe1fbf72323b397b",
+				"dweb:/ipfs/QmXnjpPajoBkhXvqdKou82K4V9Sb6tp5AQAFBrPHKYETvP"
 			]
 		}
 	},

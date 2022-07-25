@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.12+commit.f00d7308"
+		"version": "0.8.7+commit.e28d00a7"
 	},
 	"language": "Solidity",
 	"output": {
@@ -33,11 +33,11 @@
 	},
 	"sources": {
 		"contracts/LAND/AssetRegistryStorage.sol": {
-			"keccak256": "0x89799c80a884d65602df7cd0159394b35c97d6392fea71ad87eb6ab047df5393",
+			"keccak256": "0x07dcfd2d0083cb8b57ad3e773093dea4fc4c87e4ef1388de3091cd1c32446eb7",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://dca385ee315e604bb1229cad4072e3eb6f86a4e930d7a0cdcbd052218357a2dc",
-				"dweb:/ipfs/QmVzH3EfGwWJoM2JUeUpYMcVG3VXzDjGQGf8Qt7uNdpam4"
+				"bzz-raw://e023ba55cc0e9ddadeb79b149b8b9fba86f8dec4931b79f58624451b8999f461",
+				"dweb:/ipfs/QmXYP17626dwd1EHz4aaJYmyqz1PWGcyGSmsMnGEoaGddZ"
 			]
 		}
 	},

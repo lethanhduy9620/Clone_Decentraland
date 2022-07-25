@@ -46,31 +46,33 @@ contract CrowdSale {
     );
 
     constructor(
+        address tokenAddress,
         uint256 _startTime,
         uint256 _endTime,
         uint256 _rate,
         address _wallet
     ) {
+        // require() (isContract gì đấy để check token đã deploy hay chưa)
         require(_startTime >= block.timestamp, "startTime is invalid");
         require(_endTime >= _startTime, "endTime must be large than startTime");
         require(_rate > 0, "rate must be positive value");
         require(_wallet != address(0), "wallet must not be 0");
 
-        token = _createTokenContract();
+        token = MANAToken(tokenAddress);  //Token là một cái instance của Mintable Token (hình như là chứa address SC MANAToken)
         startTime = _startTime;
         endTime = _endTime;
         rate = _rate;
         wallet = payable(_wallet);
 
         // startTime = 1657270150;
-        // endTime = 1657350000;
+        // endTime = 1658656224;
         // rate = 1000;
         // wallet = payable(msg.sender);
     }
 
-    function _createTokenContract() internal returns (MANAToken) {
-        return new MANAToken();
-    }
+    // function _createTokenContract() internal returns (MANAToken) {
+    //     return new MANAToken(); // ? Nghiên cứu lại xem nếu như vậy là nó sẽ tự tạo lấy địa chỉ của smart contract => Lệnh này sẽ tự tạo ra một instance of MANAToken chứa địa chỉ của MANAToken
+    // }
 
     // low level token purchase function
     function buyTokens(address beneficiary) public payable virtual {
@@ -94,7 +96,7 @@ contract CrowdSale {
     // @return true if the transaction can buy tokens
     function _validPurchase() internal returns (bool) {
         bool withinPeriod = block.timestamp >= startTime && block.timestamp <= endTime;
-        bool nonZeroPurchase = msg.value != 0;
+        bool nonZeroPurchase = (msg.value != 0);
         return withinPeriod && nonZeroPurchase;
     }
 

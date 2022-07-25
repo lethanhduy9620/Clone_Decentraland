@@ -7,7 +7,7 @@ abstract contract Ownable is Storage {
     event OwnerUpdate(address _prevOwner, address _newOwner);
 
     modifier onlyOwner() {
-        assert(msg.sender == owner);
+        require(msg.sender == owner, "This funciton can only be called by an owner");
         _;
     }
 

@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.0+commit.c7dfd78e"
+		"version": "0.8.7+commit.e28d00a7"
 	},
 	"language": "Solidity",
 	"output": {
@@ -19,19 +19,6 @@
 						"internalType": "bool",
 						"name": "",
 						"type": "bool"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "currentContract",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -68,19 +55,6 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "proxyOwner",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -98,7 +72,7 @@
 		"compilationTarget": {
 			"contracts/LAND/Storage.sol": "Storage"
 		},
-		"evmVersion": "istanbul",
+		"evmVersion": "london",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -134,20 +108,12 @@
 				"dweb:/ipfs/QmbZiHiogJiYKo4hGFVpq7nY5VtxRtPPeMV5kf6DxtocBz"
 			]
 		},
-		"contracts/LAND/ProxyStorage.sol": {
-			"keccak256": "0x4406ba775a0207417d9b52d50662ca5d4d33e74f3efb7117948a7a717cf7c988",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://139922e15a0629a032318585552bbc5f8dacd02af8a4eb08b02fc3ef2230ccb9",
-				"dweb:/ipfs/QmNsgupKgRYLs4tAEjwjpPuAhaidZK3XWxYBbCY2isN4jU"
-			]
-		},
 		"contracts/LAND/Storage.sol": {
-			"keccak256": "0xd4ea6407e7e2de2c870c4e754458ce9d946f9ae6f1b382102a00869f79c88625",
+			"keccak256": "0x1592566d376315efaa8985a03c79d86d2c3d37803af6ca7b57951fbf150b688b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b284107a8261f8cdead759fa9e8595e9b0c81b63ee7cf7ead5c0b1fe3bb29913",
-				"dweb:/ipfs/Qmehhtot53ma7NjH5AsortjGxWRaMsQPzcE2wJrUrdS5Ve"
+				"bzz-raw://4dc2dce36503dc4794ad09ecefea04a279bca83addfbd370c8a5592f2b1e36d7",
+				"dweb:/ipfs/QmTNnhs28xXUbkobQj3pJtyXwr5FDZXjkAD6Eg3Lz5spQt"
 			]
 		}
 	},

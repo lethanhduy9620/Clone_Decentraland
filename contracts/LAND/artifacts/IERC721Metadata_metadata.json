@@ -64,7 +64,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/LAND/ERC721MetadataLAND.sol": "IERC721Metadata"
+			"contracts/LAND/ERC721Metadata.sol": "IERC721Metadata"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -86,12 +86,12 @@
 				"dweb:/ipfs/QmbJJhYXVUxFsJUF55RoR6L7M4375bHBXRZdyJYNE73isV"
 			]
 		},
-		"contracts/LAND/ERC721MetadataLAND.sol": {
-			"keccak256": "0x0f7c28309f69e3d00323acee44d0dced9e55a3999670fbe6621132bd4f7d3193",
+		"contracts/LAND/ERC721Metadata.sol": {
+			"keccak256": "0x059f4e7d5d365d302971f01cfc4fa0f35139e901cf55f0e300786aea6aebd1d5",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://040c0267eae79025921e19cf4e9691a45caff97eb1378c2d7c99cf5b7d7f3313",
-				"dweb:/ipfs/Qmbz8y5BaFH3G2fHyNbbzoRpYYT6n6yRmDz2Q6LazBFCSU"
+				"bzz-raw://62d2b10ec261b57d0d553fd3427c1b063c21e8c91cb657288a3b65ee9ebe4b7a",
+				"dweb:/ipfs/QmVSuvKS2JQrrdqPSfLY1kR9L2V6fHVLZ2RT3qnbRrcEDm"
 			]
 		}
 	},

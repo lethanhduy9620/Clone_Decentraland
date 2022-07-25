@@ -49,12 +49,26 @@
 		},
 		"gasEstimates": null,
 		"methodIdentifiers": {
+			"description()": "7284e416",
 			"name()": "06fdde03",
 			"symbol()": "95d89b41",
-			"tokenURI(uint256)": "c87b56dd"
+			"tokenMetadata(uint256)": "6914db60"
 		}
 	},
 	"abi": [
+		{
+			"inputs": [],
+			"name": "description",
+			"outputs": [
+				{
+					"internalType": "string",
+					"name": "",
+					"type": "string"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
 		{
 			"inputs": [],
 			"name": "name",
@@ -85,11 +99,11 @@
 			"inputs": [
 				{
 					"internalType": "uint256",
-					"name": "tokenId",
+					"name": "assetId",
 					"type": "uint256"
 				}
 			],
-			"name": "tokenURI",
+			"name": "tokenMetadata",
 			"outputs": [
 				{
 					"internalType": "string",

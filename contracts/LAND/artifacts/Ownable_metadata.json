@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.0+commit.c7dfd78e"
+		"version": "0.8.7+commit.e28d00a7"
 	},
 	"language": "Solidity",
 	"output": {
@@ -44,19 +44,6 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "currentContract",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -78,19 +65,6 @@
 			{
 				"inputs": [],
 				"name": "owner",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "proxyOwner",
 				"outputs": [
 					{
 						"internalType": "address",
@@ -130,7 +104,7 @@
 		"compilationTarget": {
 			"contracts/LAND/Ownable.sol": "Ownable"
 		},
-		"evmVersion": "istanbul",
+		"evmVersion": "london",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -151,19 +125,19 @@
 			]
 		},
 		"contracts/LAND/LANDStorage.sol": {
-			"keccak256": "0x99d2f3a9ccb15560cee916e0cfe349934c5252e6cd4d304db12c918980a5d0eb",
+			"keccak256": "0x3eb7a64a82955b5de43bb5e31c6bee6df38a39e211fe7643729a820c87b9a24b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://12fd2e7f9938ff9c50365f554d880402742bb006569d5d2df36bc5f04d87ffb8",
-				"dweb:/ipfs/QmYxuLWEV53LYVQuJdqMSk4Nc48tsT8ZtNEBgT17gggdCD"
+				"bzz-raw://16a3ed0321a1f25202c9bb75c53f8c4afcf839a56a784b0493c6a7f98862bab1",
+				"dweb:/ipfs/QmWzBwKgZT1N6ZuLmutKjZQUs1rfimxLydtyU9R97TVwEp"
 			]
 		},
 		"contracts/LAND/Ownable.sol": {
-			"keccak256": "0x8ad1b2b84e421069b52e10021a0c8cb89b72518070cd554bb3bf2c44aa7349a4",
+			"keccak256": "0x0cdc8d5658ef9979dfd1756011e0d91c609a7c747e332c3095cc2979b559a742",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://8a5d01961cea492393af80f202557aad89298685a395fbc52f51d62d4b59c91e",
-				"dweb:/ipfs/QmPsMrknLPWFriNgDeJmGL3GJNQFzxxC6RSLW56rw9Wzdm"
+				"bzz-raw://2a6735933d9091baa53786ae358ce4311fb1357ee442d2d5eb74bc683c248178",
+				"dweb:/ipfs/QmWzTjFuZ1NJSaVZzgYPKx1tSs4E9zTTfHserLEv6Q2KQP"
 			]
 		},
 		"contracts/LAND/OwnableStorage.sol": {
@@ -174,20 +148,12 @@
 				"dweb:/ipfs/QmbZiHiogJiYKo4hGFVpq7nY5VtxRtPPeMV5kf6DxtocBz"
 			]
 		},
-		"contracts/LAND/ProxyStorage.sol": {
-			"keccak256": "0x4406ba775a0207417d9b52d50662ca5d4d33e74f3efb7117948a7a717cf7c988",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://139922e15a0629a032318585552bbc5f8dacd02af8a4eb08b02fc3ef2230ccb9",
-				"dweb:/ipfs/QmNsgupKgRYLs4tAEjwjpPuAhaidZK3XWxYBbCY2isN4jU"
-			]
-		},
 		"contracts/LAND/Storage.sol": {
-			"keccak256": "0xd4ea6407e7e2de2c870c4e754458ce9d946f9ae6f1b382102a00869f79c88625",
+			"keccak256": "0x1592566d376315efaa8985a03c79d86d2c3d37803af6ca7b57951fbf150b688b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b284107a8261f8cdead759fa9e8595e9b0c81b63ee7cf7ead5c0b1fe3bb29913",
-				"dweb:/ipfs/Qmehhtot53ma7NjH5AsortjGxWRaMsQPzcE2wJrUrdS5Ve"
+				"bzz-raw://4dc2dce36503dc4794ad09ecefea04a279bca83addfbd370c8a5592f2b1e36d7",
+				"dweb:/ipfs/QmTNnhs28xXUbkobQj3pJtyXwr5FDZXjkAD6Eg3Lz5spQt"
 			]
 		}
 	},

@@ -50,7 +50,8 @@
 		"gasEstimates": null,
 		"methodIdentifiers": {
 			"tokenOf(address)": "42ec38e2",
-			"tokenOfOwnerByIndex(address,uint256)": "2f745c59"
+			"tokenOfOwnerByIndex(address,uint256)": "2f745c59",
+			"totalSupply()": "18160ddd"
 		}
 	},
 	"abi": [
@@ -91,6 +92,19 @@
 				{
 					"internalType": "uint256",
 					"name": "assetId",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [],
+			"name": "totalSupply",
+			"outputs": [
+				{
+					"internalType": "uint256",
+					"name": "",
 					"type": "uint256"
 				}
 			],

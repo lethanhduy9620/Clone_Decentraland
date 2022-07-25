@@ -12,12 +12,12 @@ contract AssetRegistryStorage {
     // Stores an array of assets owned by a given account
     mapping(address => uint256[]) internal _assetsOf;
 
-    // Stores the current holder of an asset
-    mapping(uint256 => address) internal _holderOf;
-
     // Stores the index of an asset in the `_assetsOf` array of its holder
     mapping(uint256 => uint256) internal _indexOfAsset;
 
+    // Stores the current holder of an asset
+    mapping(uint256 => address) internal _holderOf;
+  
     // Stores the data associated with an asset
     mapping(uint256 => string) internal _assetData;
 
